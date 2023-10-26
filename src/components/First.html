@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>My first vue Document</title>
+</head>
+<body>
+    <h1> Single HTML file in VUE</h1>
+    <h2> HTML Demo</h2>
+    
+    <div id="app"> 
+        <h1> {{title}}   </h1><br> 
+        <b> <u> <h4>   {{subtitle}} </h4></u></b>  
+        <h3> Hello {{message }} !!! </h3>
+    </div>
+
+<script>
+    // Simple Vue script --- Way 1
+//   const { createApp } = Vue
+
+//   createApp({
+//     data() {
+//       return {
+//         message: 'Harishmitha'
+//       }
+//     }
+//   }).mount('#app')
+
+
+ //Simple Vue script --- way 2
+//  const app=Vue.createApp({
+//  template : "<h2> I'm In VUE Application Template </h2>  <u> <h4> I'll create Vue web application</h4> </u>"
+    
+//  })
+//  app.mount('#app')
+
+
+//Simple Vue script --- way 3
+const app=Vue.createApp({
+    data(){
+        return {
+            title : 'Welcome to my VUE Application',
+            subtitle : "You're most welcome"
+        }
+    }
+    
+ })
+ app.mount('#app')
+</script>
+</body>
+</html>
+
+
